@@ -1,5 +1,3 @@
-# Fase-III.-Ejecuci-n-Taller-de-productividad-basada-en-herramientas-tecnol-gicas
-
 📘 README – Sistema de Gestión para Papelería Punto Escolar
 🏪 Descripción del Proyecto
 
