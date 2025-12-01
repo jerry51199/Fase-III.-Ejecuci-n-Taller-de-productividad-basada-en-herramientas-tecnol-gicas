@@ -147,12 +147,6 @@ script:
 notifications:
   email: false
 
-🧪 Prueba JUnit incluida
-
-Ubicación sugerida:
-
-src/test/java/com/papeleria/AppTest.java
-
 
 Código:
 
@@ -181,27 +175,5 @@ public class AppTest {
         v
 [ GitHub ] → Travis CI → Build/Test
 
-🙌 Contribuciones
-
-Para agregar código:
-
-Crear un branch desde develop:
-
-git checkout develop
-git checkout -b feature/nueva-funcionalidad
-
-
-Desarrollar la funcionalidad.
-
-Subir el código:
-
-git add .
-git commit -m "Descripción del cambio"
-git push origin feature/nueva-funcionalidad
-
-
-Crear Pull Request hacia develop.
-
-📄 Licencia
 
 Este proyecto se utiliza con fines académicos y puede compartirse con la comunidad de código libre conforme a lo acordado con la empresa Papelería Punto Escolar.
