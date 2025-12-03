@@ -5,9 +5,8 @@ public class Usuario {
     private String nombre;
     private String usuario;
     private String password;
-    private String rol; // Admin o Empleado
+    private String rol;
 
-    // Constructor
     public Usuario(int id, String nombre, String usuario, String password, String rol) {
         this.id = id;
         this.nombre = nombre;
@@ -16,7 +15,6 @@ public class Usuario {
         this.rol = rol;
     }
 
-    // Getters y Setters
     public int getId() { return id; }
     public String getNombre() { return nombre; }
     public String getUsuario() { return usuario; }
