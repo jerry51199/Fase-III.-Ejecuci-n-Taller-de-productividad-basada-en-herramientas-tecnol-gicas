@@ -1,0 +1,30 @@
+package com.papeleria.model;
+
+public class Usuario {
+    private int id;
+    private String nombre;
+    private String usuario;
+    private String password;
+    private String rol; // Admin o Empleado
+
+    // Constructor
+    public Usuario(int id, String nombre, String usuario, String password, String rol) {
+        this.id = id;
+        this.nombre = nombre;
+        this.usuario = usuario;
+        this.password = password;
+        this.rol = rol;
+    }
+
+    // Getters y Setters
+    public int getId() { return id; }
+    public String getNombre() { return nombre; }
+    public String getUsuario() { return usuario; }
+    public String getPassword() { return password; }
+    public String getRol() { return rol; }
+
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public void setUsuario(String usuario) { this.usuario = usuario; }
+    public void setPassword(String password) { this.password = password; }
+    public void setRol(String rol) { this.rol = rol; }
+}
