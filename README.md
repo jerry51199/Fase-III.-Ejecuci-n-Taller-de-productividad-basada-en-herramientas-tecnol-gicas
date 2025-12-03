@@ -1,179 +1,139 @@
-📘 README – Sistema de Gestión para Papelería Punto Escolar
-🏪 Descripción del Proyecto
+📚 Papelería Punto Escolar
 
-El sistema de Papelería Punto Escolar es una aplicación diseñada para digitalizar y optimizar los procesos principales de una papelería, incluyendo gestión de inventario, control de ventas, administración de usuarios y generación de reportes.
+Digitaliza y optimiza los procesos de tu papelería con esta aplicación web académica en Java.
 
-El proyecto forma parte de una entrega académica y se desarrolla bajo un enfoque profesional utilizando metodologías ágiles, GitHub como repositorio de código y Travis CI como sistema de integración continua.
+Papelería Punto Escolar es un proyecto académico que facilita la gestión de inventario, control de ventas y administración de usuarios de forma intuitiva, profesional y escalable.
 
-🎯 Objetivos del Proyecto
+✨ Características principales
 
-Automatizar los procesos internos de la papelería.
+🛠 Gestión de inventario: CRUD completo de productos.
 
-Reducir errores en ventas e inventario.
+🧾 Control de ventas: Registro de ventas y generación automática de tickets.
 
-Crear un sistema modular y escalable.
+🔐 Administración de usuarios: Roles Admin / Empleado con permisos específicos.
 
-Implementar CI/CD con Travis CI.
+📊 Reportes inteligentes: Ventas e inventario para toma de decisiones.
 
-Mantener trazabilidad completa del proyecto mediante Issues, Milestones y Pull Requests.
+✅ Pruebas automáticas: JUnit + integración CI/CD con Travis CI.
 
-🧩 Funcionalidades del Sistema
-✅ Implementadas en la fase BETA
+🏗 Arquitectura MVC
 
-Sistema de autenticación (Login).
+La aplicación sigue el patrón Modelo-Vista-Controlador (MVC), separando claramente la lógica de negocio, la presentación y los datos:
 
-Gestión de inventario (CRUD de productos).
+🖥 Frontend (Vista)
 
-Registro de ventas.
+Tecnologías: JSP, HTML, CSS y JavaScript
 
-Prueba JUnit básica.
+Descripción: Interfaz de usuario amigable e intuitiva, donde se interactúa con el sistema.
 
-Pipeline de integración continua con Travis CI.
+⚙️ Servidor / Controlador
 
-🚀 Planificadas para la fase GA
+Tecnologías: Tomcat o GlassFish
 
-Alertas de stock mínimo.
+Descripción: Gestiona la lógica de negocio, recibe las solicitudes del usuario y dirige las respuestas a la vista adecuada.
 
-Reportes de ventas e inventario.
+💾 Modelo / Base de Datos
 
-Recuperación de contraseña.
+Tecnologías: MySQL o PostgreSQL
 
-Documentación extendida.
+Descripción: Almacena información crítica del sistema: usuarios, inventario y ventas.
 
-📌 Gestión del Proyecto
-📁 Branches principales
+📂 Repositorio y Control de Versiones
 
-master → versión estable del sistema
+Tecnología: GitHub
 
-develop → rama en desarrollo
+Descripción: Controla versiones del código, ramas, commits y Pull Requests.
 
-🔱 Branches por funcionalidad
+🔧 CI/CD
 
-feature/login
+Tecnología: Travis CI
 
-feature/inventario
+Descripción: Ejecuta pruebas automáticas y valida los commits antes de integrarlos al flujo de desarrollo.
 
-feature/ventas
+🌿 Flujo de desarrollo
 
-feature/reportes
+Se manejan dos ramas principales:
 
-feature/alerts
+develop: Integración de nuevas funcionalidades
 
-feature/travis
+master: Código estable listo para producción
 
-feature/junit
+Proceso por tarea / Issue:
 
-Todas las funcionalidades se integran mediante Pull Requests hacia develop.
+Crear branch de tarea: feature/hu-xx o bugfix/descripcion
 
-📝 Issues
+Desarrollar la funcionalidad y realizar commits
 
-Todo el control del proyecto está documentado en la sección de Issues del repositorio.
-Cada Issue incluye:
+Abrir Pull Request hacia develop
 
-Descripción detallada
+Travis CI ejecuta pruebas automáticamente
 
-Tiempo estimado
+Merge a develop cuando las pruebas pasan
 
-Dependencias
+Merge a master al finalizar la versión (GA)
 
-Etiquetas
+🚀 Instalación
+# Clonar el repositorio
+git clone https://github.com/tu_usuario/Papeleria-Punto-Escolar.git
 
-Milestone asignado
 
-Criterios de aceptación
+Abrir el proyecto en NetBeans o Eclipse
 
-Issues principales:
+Configurar servidor de aplicación (Tomcat / GlassFish)
 
-Configuración inicial del proyecto
+Configurar la base de datos (MySQL / PostgreSQL) y actualizar db.properties o config.xml
 
-Login
+Ejecutar el proyecto desde el IDE o:
 
-CRUD Inventario
+mvn clean install
 
-Ventas
 
-Alertas de stock
+Acceder en el navegador: http://localhost:8080/PapeleriaPuntoEscolar/
 
-Reportes
+🖥 Uso
 
-Travis CI
+Iniciar sesión como Administrador o Empleado
 
-Pruebas JUnit
+Gestionar inventario y ventas
 
-Documentación
+Generar tickets y consultar reportes
 
-🎯 Milestones
+Explorar módulos según tu rol
 
-Se definieron dos etapas clave:
+🧪 Pruebas
 
-🎛 BETA
+Pruebas unitarias con JUnit en módulos críticos
 
-Incluye:
+Travis CI ejecuta pruebas automáticamente al hacer push o abrir Pull Requests
 
-Login
+📅 Milestones
 
-Inventario
+Beta: Desarrollo, pruebas iniciales y funcionalidades básicas
 
-Ventas
+GA: Código final, optimizado y documentado
 
-Travis CI
+🏷 Etiquetas / Labels
 
-JUnit básico
+Backend | Frontend | Usuarios | Seguridad | Login | Reporte | CI/CD | Documentación | Mejora | Bug
 
-📦 GA (General Availability)
+💻 Tecnologías
 
-Incluye:
+Lenguaje: Java (JSP, Servlets)
 
-Reportes
+Base de datos: MySQL / PostgreSQL
 
-Alertas
+IDE: NetBeans / Eclipse
 
-Documentación final
+Control de versiones: Git / GitHub
 
-Recuperación de contraseña
+CI/CD: Travis CI
 
-🚧 Integración Continua – Travis CI
+Pruebas: JUnit
 
-Se utiliza Travis CI para ejecutar pruebas automáticamente en cada commit o Pull Request.
+👨‍💻 Autor
 
-📄 Archivo .travis.yml
-language: java
-jdk:
-  - openjdk17
+Gerardo Sánchez Muñoz
+Proyecto Académico – Papelería Punto Escolar
 
-script:
-  - mvn clean test
-
-notifications:
-  email: false
-
-
-Código:
-
-import static org.junit.Assert.assertTrue;
-import org.junit.Test;
-
-public class AppTest {
-    @Test
-    public void pruebaBasica() {
-        assertTrue(true);
-    }
-}
-
-🏛 Arquitectura del Sistema
-[ Cliente Web ]
-        |
-        v
-[ Servidor Java / Spring o Jakarta ]
-        |
-        v
-[ API REST ]
-        |
-        v
-[ Base de Datos MySQL ]
-        |
-        v
-[ GitHub ] → Travis CI → Build/Test
-
-
-Este proyecto se utiliza con fines académicos y puede compartirse con la comunidad de código libre conforme a lo acordado con la empresa Papelería Punto Escolar.
+📧 Contactar
+ | 🌐 GitHub
