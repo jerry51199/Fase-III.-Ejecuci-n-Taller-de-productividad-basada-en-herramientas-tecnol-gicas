@@ -9,7 +9,6 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
         String usuario = request.getParameter("usuario");
         String password = request.getParameter("password");
 
@@ -25,3 +24,4 @@ public class LoginServlet extends HttpServlet {
         }
     }
 }
+
