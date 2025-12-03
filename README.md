@@ -72,23 +72,8 @@ Merge a develop cuando las pruebas pasan
 
 Merge a master al finalizar la versión (GA)
 
-🚀 Instalación
-# Clonar el repositorio
-git clone https://github.com/tu_usuario/Papeleria-Punto-Escolar.git
 
 
-Abrir el proyecto en NetBeans o Eclipse
-
-Configurar servidor de aplicación (Tomcat / GlassFish)
-
-Configurar la base de datos (MySQL / PostgreSQL) y actualizar db.properties o config.xml
-
-Ejecutar el proyecto desde el IDE o:
-
-mvn clean install
-
-
-Acceder en el navegador: http://localhost:8080/PapeleriaPuntoEscolar/
 
 🖥 Uso
 
